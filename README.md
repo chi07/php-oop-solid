@@ -16,11 +16,6 @@ On this project you also could realise how to deal with:
 - XSS attack;
 - Cross Site Request Forgery (CSRF) Attack
 
-# 
-Views:
-[HOME](https://github.com/shinichi2510/php-oop-solid/blob/master/assets/imgs/print.png) |
-[LOGIN](https://github.com/shinichi2510/php-oop-solid/blob/master/assets/imgs/login.png) | 
-[CREATE POST](https://github.com/shinichi2510/php-oop-solid/blob/master/assets/imgs/create.png)
 
 ### Installation
 
@@ -49,6 +44,3 @@ $ ./vendor/bin/codecept run --steps
 
 ### Author
 Chi Pham - <chipv.bka@gmail.com> 
-
-### License
-blog is available under the MIT license. See the LICENSE file for more info.
