@@ -1,0 +1,21 @@
+{
+    "name": "victor/blog",
+    "description": "Blog to practice oop concepts",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "VictorLeite",
+            "email": "chipv.bka@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "codeception/codeception": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "app\\": "\\"        
+        }
+    }
+}
