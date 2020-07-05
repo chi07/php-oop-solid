@@ -20,7 +20,9 @@ class ControllerFactory {
         $fileName = ucfirst($controllerName) . 'Controller.php';
         $className = "app\controllers\\" . ucfirst($controllerName) . 'Controller';
         $filePath = './controllers/' . $fileName;
+
         require_once($filePath);
+
         if (!class_exists($className)) {
             throw new \Exception("Class $className not founded!");
         }

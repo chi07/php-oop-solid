@@ -105,7 +105,7 @@ class Application extends BaseApplication {
         $this->setController($controller);
     }
     /**
-     * Set the rounter instance on application instance to be delegate on the future.
+     * Set the router instance on application instance to be delegate on the future.
      * @param BaseRouter $router
      */
     private function setRouter(BaseRouter $router) {

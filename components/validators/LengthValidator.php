@@ -10,9 +10,7 @@ use \app\components\base\Validator as BaseValidator;
  * @author chipv.bka@gmail.com
  */
 class LengthValidator extends BaseValidator {
-
     public static function isValid($value, $options) {
-
         if (!isset($options['quantity'])) {
             throw new \Exception('Option quantity need to be passed');
         }

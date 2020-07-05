@@ -10,7 +10,6 @@ use \app\components\base\Validator as BaseValidator;
  * @author chipv.bka@gmail.com
  */
 class DateValidator extends BaseValidator {
-
     /**
      * Check if the date is valid in a specific format passed as options values
      * @param type $value

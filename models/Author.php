@@ -7,7 +7,6 @@ use app\components\Application;
 use app\components\base\ModelFactory;
 
 class Author extends ModelBase {
-
     public static function create() {
         return ModelFactory::create('Author');
     }
@@ -17,8 +16,6 @@ class Author extends ModelBase {
     }
 
     static function findByUserName($username) {
-
-
         $conn = Application::app()->db->conn;
         $sql = "SELECT * FROM author where login = ?";
         $stmt = $conn->prepare($sql);
@@ -43,7 +40,6 @@ class Author extends ModelBase {
     }
 
     public static function find($id) {
-
         $conn = Application::app()->db->conn;
         $sql = "SELECT * FROM author where id = ?";
         $stmt = $conn->prepare($sql);

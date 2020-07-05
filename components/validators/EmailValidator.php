@@ -10,7 +10,6 @@ use \app\components\base\Validator as BaseValidator;
  * @author chipv.bka@gmail.com
  */
 class EmailValidator extends BaseValidator {
-
     public static function isValid($value, $options = []) {
         if (!isset($value) || trim($value) == '') {
             return false;

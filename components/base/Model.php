@@ -15,6 +15,7 @@ abstract class Model extends Base {
 
     /**
      * Find the model by pk
+     * @param $id
      */
     abstract static function find($id);
 
@@ -25,6 +26,7 @@ abstract class Model extends Base {
 
     /**
      * Delete the model by pk
+     * @param $id
      */
     abstract static function delete($id);
 
@@ -58,8 +60,7 @@ abstract class Model extends Base {
     }
 
     /**
-     * Return the erros of model
-     * @return type
+     * Return the errors of model
      */
     public function getErrors() {
         return $this->errors;
