@@ -3,7 +3,7 @@
 namespace app\components\base;
 
 /**
- * Abstract class responsable to resolve the router finding the controller and action classes name
+ * Abstract class responsible to resolve the router finding the controller and action classes name
  * 
  * @author chipv.bka@gmail.com
  */
@@ -59,5 +59,3 @@ abstract class Router {
     }
 
 }
-
-?>

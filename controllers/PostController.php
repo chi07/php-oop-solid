@@ -9,9 +9,11 @@ use app\models\Comment;
 use app\components\Auth;
 use app\components\commons\Security;
 
-class PostController extends BaseController {
+class PostController extends BaseController
+{
 
-    protected function beforeAction($actionName) {
+    protected function beforeAction($actionName)
+    {
         parent::beforeAction($actionName);
 
         if ($actionName == 'actionCreate' && !Auth::isLogged()) {
@@ -25,12 +27,13 @@ class PostController extends BaseController {
         }
     }
 
-    public function actionDetail() {
+    public function actionDetail()
+    {
         $id = $_GET['id'];
 
         $comment = ModelFactory::create('Comment');
 
-        // Postback
+        // Post back
         if ($_POST['comment'] && Security::checkCsrfToken($_POST['csrf_token'])) {
 
             $comment = ModelFactory::create('Comment');
@@ -46,7 +49,8 @@ class PostController extends BaseController {
         $this->render('views/post/detail', ['post' => $post, 'comment' => $comment]);
     }
 
-    public function actionCreate() {
+    public function actionCreate()
+    {
 
         $post = ModelFactory::create('Post');
 
@@ -64,7 +68,8 @@ class PostController extends BaseController {
         $this->render('views/post/create', ['post' => $post]);
     }
 
-    public function actionUpdate() {
+    public function actionUpdate()
+    {
 
         $id = $_GET['id'];
         $post = Post::find($id);
@@ -82,18 +87,19 @@ class PostController extends BaseController {
         $this->render('views/post/update', ['post' => $post]);
     }
 
-    public function actionDelete() {
+    public function actionDelete()
+    {
 
         $id = $_POST['id'];
         $authorId = Auth::getSession('id');
         // check auth
         $post = Post::find($id);
         if ($post->isOwner($authorId)) {
-            
-            foreach($post->comments as $comment){
-                 Comment::delete($comment->id);
+
+            foreach ($post->comments as $comment) {
+                Comment::delete($comment->id);
             }
-            
+
             Post::delete($id);
         }
 

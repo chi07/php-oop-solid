@@ -3,7 +3,7 @@
 namespace app\components\base;
 
 /**
- * This class give the flexibility to insert properties to the object dinamically.
+ * This class give the flexibility to insert properties to the object dynamically.
  * 
  * @author chipv.bka@gmail.com
  */

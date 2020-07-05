@@ -16,6 +16,7 @@ abstract class Application extends Base {
     /**
      * is not allowed to call from outside to prevent from creating multiple instances,
      * to use the singleton, you have to obtain the instance from Singleton::getInstance() instead
+     * @param array $config
      */
     private function __construct($config = []) {
 
@@ -62,5 +63,3 @@ abstract class Application extends Base {
 
     abstract public function run();
 }
-
-?>

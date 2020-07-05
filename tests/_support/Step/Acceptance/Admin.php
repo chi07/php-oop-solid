@@ -8,7 +8,7 @@ class Admin extends \AcceptanceTester
     {
         $I = $this;        
         $I->amOnPage('/index.php?r=home/login');
-        $I->fillField('login[login]', 'victor');
+        $I->fillField('login[login]', 'chipv');
         $I->fillField('login[password]', '1234');
         $I->click('Submit');
 

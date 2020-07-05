@@ -9,7 +9,7 @@ use app\components\validators\LengthValidator;
 use app\models\Author;
 
 /**
- * Class responsable to Autentication proccess and handle session of auth.
+ * Class responsible to Authentication process and handle session of auth.
  * 
  * @author chipv.bka@gmail.com
  */
@@ -106,5 +106,4 @@ class Auth extends BaseAuth {
         unset($_SESSION['login']);
         unset($_SESSION['password']);
     }
-
 }

@@ -1,20 +1,3 @@
--- MySQL dump 10.16  Distrib 10.1.26-MariaDB, for debian-linux-gnu (x86_64)
---
--- Host: localhost    Database: blog
--- ------------------------------------------------------
--- Server version	10.1.26-MariaDB-0+deb9u1
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
-/*!40103 SET TIME_ZONE='+00:00' */;
-/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
-/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
-/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
-/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
-
 --
 -- Current Database: `blog`
 --
@@ -45,7 +28,7 @@ CREATE TABLE `author` (
 
 LOCK TABLES `author` WRITE;
 /*!40000 ALTER TABLE `author` DISABLE KEYS */;
-INSERT INTO `author` VALUES (1,'Victor','victor','1234');
+INSERT INTO `author` VALUES (1,'Chi Pham','chipv','1234');
 /*!40000 ALTER TABLE `author` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -109,14 +92,3 @@ LOCK TABLES `post` WRITE;
 INSERT INTO `post` VALUES (12,'Post Test','&lt;p style=&quot;margin: 0px 0px 15px; padding: 0px; font-family: &#039;Open Sans&#039;, Arial, sans-serif; text-align: justify;&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius elementum eros ut pretium. Integer congue erat aliquet hendrerit congue. Morbi laoreet tempus nisi, sed vestibulum ante dictum ut. Aliquam posuere nulla pulvinar diam vulputate cursus. Nunc eros orci, dapibus et urna et, dictum vehicula diam. Quisque convallis eleifend ligula, id facilisis augue consectetur id. Morbi quis vulputate urna.&lt;/p&gt;\r\n&lt;p style=&quot;margin: 0px 0px 15px; padding: 0px; font-family: &#039;Open Sans&#039;, Arial, sans-serif; text-align: justify;&quot;&gt;Duis ut vulputate lacus. Fusce interdum felis at dui vestibulum, fringilla semper nunc dictum. Ut consequat tempor magna et pulvinar. Donec eleifend risus a magna imperdiet, at pellentesque felis convallis. Integer faucibus pellentesque mauris, in consectetur erat lacinia a. Vivamus vel felis in nulla porta efficitur. Aenean efficitur lectus quis leo tincidunt sagittis. Curabitur sollicitudin augue sed magna mollis, vitae imperdiet orci bibendum. Duis tincidunt justo ultricies dignissim dapibus. Maecenas viverra, nunc quis sollicitudin imperdiet, odio ipsum egestas est, sit amet ultricies magna nulla sit amet dui. Donec congue purus tellus, non venenatis velit elementum ut. Ut eu malesuada ex. Phasellus placerat facilisis aliquam. Duis tincidunt in nunc quis condimentum. Duis neque libero, vehicula non pulvinar ut, iaculis id felis. Praesent lorem enim, aliquet in porttitor ac, vehicula nec massa.&lt;/p&gt;\r\n&lt;p style=&quot;margin: 0px 0px 15px; padding: 0px; font-family: &#039;Open Sans&#039;, Arial, sans-serif; text-align: justify;&quot;&gt;Donec urna purus, consectetur at ante eget, tempor tempor turpis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi elit libero, fringilla non ante nec, posuere vestibulum magna. In metus nibh, fermentum eget fringilla a, auctor at erat. Praesent in viverra ipsum. Donec sit amet velit cursus nisi condimentum elementum. Etiam efficitur enim rhoncus, mattis libero tempor, aliquam dui. Vestibulum eget odio a ex laoreet scelerisque a eget nunc. In et commodo sapien. Sed ut tellus quis sapien consequat malesuada. Morbi eleifend eleifend elementum. Vestibulum et dolor eget quam elementum sodales.&lt;/p&gt;',1,'2018-01-02 17:34:57','0000-00-00 00:00:00');
 /*!40000 ALTER TABLE `post` ENABLE KEYS */;
 UNLOCK TABLES;
-/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
-
-/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
-/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
-/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
-
--- Dump completed on 2018-01-02 15:37:35

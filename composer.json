@@ -1,11 +1,11 @@
 {
-    "name": "victor/blog",
+    "name": "sunshine2510/blog",
     "description": "Blog to practice oop concepts",
     "type": "project",
     "license": "MIT",
     "authors": [
         {
-            "name": "VictorLeite",
+            "name": "ChiPV",
             "email": "chipv.bka@gmail.com"
         }
     ],
@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "app\\": "\\"        
+            "app\\": "\\"
         }
     }
 }

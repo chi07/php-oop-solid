@@ -42,7 +42,7 @@ if ($login->hasErrors()) {
 
             <b> Credentials </b> <br>
 
-            Login: victor <br>
+            Login: chipv <br>
             Password: 1234
 
         </blockquote>

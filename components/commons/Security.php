@@ -13,14 +13,16 @@ namespace app\components\commons;
  *
  * @author chipv.bka@gmail.com
  */
-class Security {
+class Security
+{
 
-    static function setCsrfSession($csrfToken) {
-
+    static function setCsrfSession($csrfToken)
+    {
         $_SESSION['csrfToken'] = $csrfToken;
     }
 
-    static function getCsrfSession() {
+    static function getCsrfSession()
+    {
 
         return $_SESSION['csrfToken'];
     }
@@ -29,7 +31,8 @@ class Security {
      * Generate Token every request
      * @return type
      */
-    static function generateCsrfToken() {
+    static function generateCsrfToken()
+    {
         if (!session_id()) {
             session_start();
         }
@@ -41,9 +44,10 @@ class Security {
 
     /**
      * check CSRF token
-     * 
+     *
      */
-    static function checkCsrfToken($token) {
+    static function checkCsrfToken($token)
+    {
         return $token === self::getCsrfSession();
     }
 

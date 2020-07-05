@@ -31,7 +31,7 @@ class LoginCest {
 
         $I->amOnPage('/index.php?r=home/login');
          // Test password wrong
-        $I->fillField('login[login]', 'victor');
+        $I->fillField('login[login]', 'chipv');
         $I->fillField('login[password]', '4321');
         $I->click('Submit');
         $I->see('Login or Password not founded');
@@ -53,11 +53,11 @@ class LoginCest {
         
         $I->amOnPage('/index.php?r=home/login');
         // Test submit
-        $I->fillField('login[login]', 'victor');
+        $I->fillField('login[login]', 'chipv');
         $I->fillField('login[password]', '1234');
         $I->click('Submit');
         
-        $I->see('Victor');
+        $I->see('chipv');
         $I->see('Blog');
         $I->see('Home');        
         $I->see('New Post');
@@ -67,11 +67,11 @@ class LoginCest {
         
         $I->amOnPage('/index.php?r=home/login');
         // Test submit
-        $I->fillField('login[login]', 'victor');
+        $I->fillField('login[login]', 'chipv');
         $I->fillField('login[password]', '1234');
         $I->click('Submit');
         
-        $I->see('Victor');
+        $I->see('chipv');
         $I->see('Blog');
         $I->see('Home');        
         $I->see('New Post');

@@ -18,11 +18,13 @@ abstract class Component {
 
     /**
      *  Method to be implemented by the instance and represents the start of component execution
+     * @param $params
      */
     abstract function bootstrap($params);
 
     /**
-     * Method to be implemented by the instance and represents the end of compenent execution
+     * Method to be implemented by the instance and represents the end of component execution
+     * @param $params
      */
     abstract function end($params);
 }

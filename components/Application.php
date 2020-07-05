@@ -26,41 +26,32 @@ class Application extends BaseApplication {
      * Start the application
      */
     public function run() {
-
-        $this->lifeCicle();
+        $this->lifeCircle();
     }
     /**
-     * It is the lifecicle of application. Every steps that application will call.
+     * It is the lifeCircle of application. Every steps that application will call.
      */
-    private function lifeCicle() {
-        
+    private function lifeCircle() {
         $this->preInit();
-
         $this->init();
-
         $this->bootstrap();
-
         $this->end();
     }
 
     /**
-     * Load config from the config file /config/main.php
+     * Load config from the config file /config/app.php
      */
     private function preInit() {
-        // load configs
         $this->name = $this->_config['name'];
     }
 
     /**
-     * Inicialize the components and resolve the routes
+     * Init the components and resolve the routes
      */
     private function init() {
-
-        // Inicialize all components
+        // Init all components
         if (is_array($this->_config['components'])) {
-
             foreach ($this->_config['components'] as $name => $component) {
-
                 $component = ComponentFactory::create($name, $component);
                 $this->setComponent($name, $component)->bootstrap();
             }
@@ -82,7 +73,7 @@ class Application extends BaseApplication {
      */
     public function end() {
 
-        // Inicialize all components
+        // Initialize all components
         if (is_array($this->_config['components'])) {
 
             foreach ($this->_config['components'] as $name => $component) {
