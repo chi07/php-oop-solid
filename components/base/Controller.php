@@ -29,7 +29,7 @@ abstract class Controller extends Base {
      * @throws \Exception
      */
     final public function callAction($actionName) {
-        $realName = 'action' . ucfirst($actionName);
+        $realName = lcfirst($actionName).'Action';
         if (is_callable([$this, $realName])) {
             $this->beforeAction($realName);
             $this->$realName();
@@ -60,5 +60,3 @@ abstract class Controller extends Base {
     }
 
 }
-
-?>

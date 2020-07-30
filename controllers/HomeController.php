@@ -9,7 +9,7 @@ use app\models\Post;
 class HomeController extends BaseController
 {
 
-    public function actionIndex()
+    public function indexAction()
     {
 
         $posts = Post::findHome();
@@ -17,7 +17,7 @@ class HomeController extends BaseController
         $this->render('views/home/index', ['posts' => $posts]);
     }
 
-    public function actionLogin()
+    public function loginAction()
     {
 
         $login = Auth::create();
@@ -36,7 +36,7 @@ class HomeController extends BaseController
         $this->render('views/home/login', ['login' => $login]);
     }
 
-    public function actionLogout()
+    public function logoutAction()
     {
 
         Auth::logout();

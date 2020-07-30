@@ -27,7 +27,7 @@ class PostController extends BaseController
         }
     }
 
-    public function actionDetail()
+    public function detailAction()
     {
         $id = $_GET['id'];
 
@@ -49,7 +49,7 @@ class PostController extends BaseController
         $this->render('views/post/detail', ['post' => $post, 'comment' => $comment]);
     }
 
-    public function actionCreate()
+    public function createAction()
     {
 
         $post = ModelFactory::create('Post');
@@ -68,15 +68,14 @@ class PostController extends BaseController
         $this->render('views/post/create', ['post' => $post]);
     }
 
-    public function actionUpdate()
+    public function updateAction()
     {
 
         $id = $_GET['id'];
         $post = Post::find($id);
 
-        // Postback
+        // Post back
         if ($_POST['post'] && Security::checkCsrfToken($_POST['csrf_token'])) {
-
             $post->loadAttributes($_POST['post']);
             $post->author_id = 1;
             if ($post->save()) {
@@ -87,9 +86,8 @@ class PostController extends BaseController
         $this->render('views/post/update', ['post' => $post]);
     }
 
-    public function actionDelete()
+    public function deleteAction()
     {
-
         $id = $_POST['id'];
         $authorId = Auth::getSession('id');
         // check auth

@@ -21,6 +21,8 @@ On this project you also could realise how to deal with:
 
 ```sh
 $ git clone https://github.com/shinichi2510/php-oop-solid.git
+composer install
+php -S localhost:4001
 ```
 
 Database script: [https://github.com/shinichi2510/php-oop-solid/tree/master/config/script/blog.sql](https://github.com/shinichi2510/php-oop-solid/tree/master/config/script/blog.sql)
@@ -31,7 +33,7 @@ mysql -p -u[user] blog < blog.sql
 
 
 ### Run
-http://localhost/blog/
+http://localhost:4001/blog/
 
 
 ### Test
